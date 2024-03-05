@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = '1.1.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/harmony_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/harmony/harmony_{{ version }}.tar.gz
-  sha256: a63c7d7cbbc5d183e8f919552e9d73044e0a89660856e80861a00eb5d25ac7b5
+  sha256: 7bcdd5cb7e99e791e0aa11aa3e5316cbdb884270a3528f8a5fe5b8410169c167
 
 build:
   merge_build_host: True  # [win]
