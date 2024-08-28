@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/harmony_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/harmony/harmony_{{ version }}.tar.gz
-  sha256: a63c7d7cbbc5d183e8f919552e9d73044e0a89660856e80861a00eb5d25ac7b5
+  sha256: 240ae45bf97311371aa132db1ff6725dd287ee2b98620c0f23d88ab00b633bdd
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -77,9 +77,7 @@ about:
   home: https://portals.broadinstitute.org/harmony/
   dev_url: https://github.com/immunogenomics/harmony
   license: GPL-3.0-only
-  summary: Implementation of the Harmony algorithm for single cell integration, described in
-    Korsunsky et al <doi:10.1038/s41592-019-0619-0>. Package includes a standalone Harmony
-    function and interfaces to external frameworks.
+  summary: Implementation of the Harmony algorithm for single cell integration, described in Korsunsky et al <doi:10.1038/s41592-019-0619-0>. Package includes a standalone Harmony function and interfaces to external frameworks.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
