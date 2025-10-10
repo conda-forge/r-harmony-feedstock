@@ -1,4 +1,4 @@
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/harmony_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/harmony/harmony_{{ version }}.tar.gz
-  sha256: 9ab815ab0260a6726b2bb48de3fa4c3cad36acbe9ac6158d515fb16ea66bbddd
+  sha256: 9adcb7156830e6716a7ced1a4cff91dbf2748be3ee9d60c4cc6ff787b991f346
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
